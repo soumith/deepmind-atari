@@ -35,8 +35,8 @@ http://docs.nvidia.com/cuda/cuda-getting-started-guide-for-linux
 To train DQN on Atari games, the following components must be installed:
     * LuaJIT and Torch 7.0
     * nngraph
-    * Xitari
-    * AleWrap
+    * Xitari (Download here: https://github.com/deepmind/xitari)
+    * AleWrap (Download here: https://github.com/deepmind/alewrap)
 
 To install all of the above in a subdirectory called 'torch', it should be enough to run
 
@@ -57,6 +57,10 @@ Prior to running DQN on a game, you should copy its ROM in the 'roms' subdirecto
 It should then be sufficient to run the script
 
     ./run_cpu <game name>
+
+For example, 
+
+    ./run_cpu breakout
 
 Or, if GPU support is enabled,
 
